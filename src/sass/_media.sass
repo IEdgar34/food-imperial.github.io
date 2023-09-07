@@ -1,0 +1,297 @@
+@media (max-width: 1200px)
+    .container
+        padding: 0 20px
+    .header
+        .menu
+            margin-right: 12px
+    .salad
+        &-title_price
+            display: flex
+            gap: 4px 
+        &_wrapper
+            width: 60%
+            justify-content: center
+            flex-wrap: wrap
+            gap: 20px
+        &_row
+            display: flex
+            justify-content: center
+            margin-top: 20px
+        &_item
+            margin-top: 40px 
+    .subheader
+        &_menu__list
+            padding-left: 43px 
+    .menu
+        
+        div
+            &:nth-child(2)
+                
+                margin-right: 16px                         
+@media (max-width: 1024px)
+    .menu
+        &-list
+            gap: 15px
+        div
+            &:nth-child(2)
+                margin-right: 17px
+                    
+    .subheader
+        &_menu__list
+            padding-left: 17px        
+
+
+
+
+
+
+
+@media (max-width: 991px)
+    header
+        position: relative
+        .container
+            position: relative
+    
+           
+    .hamburger
+        display: block
+        position: absolute
+        left: 20px
+        top: 20px
+        span
+            display: block
+            margin-top: 5px
+            width: 22px
+            height: 2px
+            background-color: #787878
+            transition: 0.6s
+            &:nth-child(1)
+                margin-top: 0     
+        &_active
+            span
+                margin: 0
+                &:nth-child(1)
+                    transform: rotate(45deg)
+                &:nth-child(2)
+                    display: none   
+                &:nth-child(3)
+                    transform: rotate(-45deg)
+    .menu
+        text-align: center
+        display: block
+        position: absolute
+        left: -100%
+        top: 74px
+        width: 100%
+        height: 100vh
+        background-color: #F5F5F5
+        flex-direction: column
+        display: flex
+        justify-content: start
+        z-index: 999
+        align-items: center
+        transition: 0.8s all
+        &_active
+            left: 0
+        div
+            padding: 25px 0 25px 0
+            &:last-child
+                margin-right: 0
+        .backg_wite
+            order: -1
+            margin-right: 0
+            width: 100%
+            background-color: #FFFFFF
+            padding: 15px 0 15px 0 
+            .header-text_wrap
+                padding: 0
+        #order
+            order: 0    
+        .mobile_btn
+            display: block
+            margin-top: 20px
+            width: 280px
+            height: 40px         
+            border-radius: 30px
+            border: none
+            background: linear-gradient(180deg, #FFDD4E 0%, #FFD31B 99.99%, #FFD31B 100%)
+            box-shadow: 0px 3px 0px 0px #F2C610
+            font-size: 14px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            text-transform: uppercase                      
+
+
+
+    .salad
+        &_wrapper
+            width: 80%                      
+    .header
+        &-text_wrap
+            display: none                
+    .home-btn_btn
+        width: 46px
+        p
+            display: none
+    .home-btn_text
+        display: none
+                  
+    .menu-list
+        flex-direction: column
+        column-gap: 20px            
+    .subheader_menu__list
+        gap: 15px
+        flex-wrap: wrap
+    .footer
+        .footer_list
+            gap: 30px
+    .header
+        &_wrap
+            justify-content: center
+            /* position: relative */
+        
+            
+            
+            
+            
+        .home-btn
+            position: absolute
+            right: 10px  
+    .main
+        &_title
+            color: #F92424
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                left: -25px
+                top: 50%
+                transform: translateY(-50%)
+                display: block
+                width: 20px
+                height: 20px
+                background: url('../images/icons/red.png')center center/cover no-repeat
+        &_subtitle
+            color: #F92424
+            .gren
+                color: #F92424
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px)
+    .subhedaer_menu__img 
+        display: none
+    .subheader
+        &_menu__list
+            padding-left: 0
+            text-align: center
+            justify-content: center  
+    .img_block
+        width: 40%
+    .img_block2
+        width: 22%    
+    .main
+        &_title
+            display: inline-block
+            &::before
+                left: 0
+    .food
+        position: relative
+        .link_icon
+            display: inline-block
+        &_wrapper
+            flex-direction: column
+            gap: 0
+            
+        &_list
+            display: none
+            
+            &_active
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                column-gap: 19px
+                width: 100%
+                height: 100vh
+                padding: 19px 0 0 25px
+                background-color: #F5F5F5
+                position: absolute
+                top: 104px
+                left: 0
+                z-index: 999 
+                
+                
+            
+        .food_btn__block
+            position: relative
+            width: 300px
+            height: 40px
+            background: #F5F5F5
+            margin: 0 auto
+            border-radius: 30px
+            &_active
+                width: 100%
+                border-radius: 0
+                position: absolute
+                left: 0
+                text-align: center
+                .food_hamburger
+                    position: absolute
+                    right: 10px
+                    top: 8px
+            p
+                display: inline-block
+                padding: 12px 0 12px 121px
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                text-transform: uppercase
+            .food_btn
+                display: inline-block
+                margin-left: 50px
+                
+                &_active
+                    .food_btn__width
+                        display: none
+                        transition: 0.8s
+                    .food_hamburger
+                        display: block
+            .food_hamburger
+                span
+                    display: block
+                    width: 20px
+                    height: 2px
+                    background-color: #787878
+                    margin-top: 5px 
+                    transition: 0.8s all
+                    &:nth-child(1)
+                        margin: 0
+                        transform:  rotate(45deg) translate(19%, 526%) 
+                        
+                    &:nth-child(2)
+                        display: none      
+                    &:nth-child(3)
+                        margin: 0
+                        transform:  rotate(-45deg) translate(-50%,100%)
+                    
+    
+    
+    
+@media (max-width: 425px)
+@media (max-width: 375px)
+    .food
+        &_list
+        .food_btn__block
+            p
+            .food_btn
+                margin-left: 28px
+@media (max-width: 320px)
+             
